@@ -1,0 +1,15 @@
+.contaner{
+    width: 100%;
+    height: 400%;
+    background-color: yellow;
+    display: flex;
+    
+    
+}
+
+.item{
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    align-content: space-between;
+}
