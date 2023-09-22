@@ -1,0 +1,19 @@
+body { margin: auto}
+
+#container {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow
+}
+
+#container div:first-of-type { background-color: green; display: none }
+
+#container div:nth-of-type(2) { background-color: yellow; display: none }
+
+#container div:last-child { background-color: purple }
+
+
+#container div { width: 100px; height: 100px }
