@@ -1,0 +1,23 @@
+.contaner{
+    flex-direction: column;
+    width: 600%;
+    height: 500%;
+    display: flex;
+}
+.item {
+
+    width: 100%;
+    height: 300%;
+}
+.green{
+  color: green;
+}
+.yellow{
+    color: yellow;
+
+}
+.purple{
+    color:purple;
+    order: 2;
+    width: 600%;
+}
