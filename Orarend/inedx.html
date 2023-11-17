@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>
+		Napirend
+	</title>
+	<meta lang="hu">
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<header><h1 id="day">Napirend</h1>  <button onclick="background()" id="ton">🌑</button></header>
+<body id="b" background="sun2.webp">
+    <script>
+        var n =0;
+        function background(){
+            let g = document.getElementById("b")
+            if(n == 0){
+                document.getElementById("b").style.backgroundImage ="url('moon.jpg')";
+                document.getElementById("day").innerHTML = "Napirend (munka mentes időkben)";
+                const nodeList = document.querySelectorAll(".change");
+                
+                for (let i = 0; i < nodeList.length; i++) {
+                nodeList[i].innerHTML = "Alvás"}
+                document.getElementById("ton").innerHTML = "☀️";
+                
+                n ++;
+                
+            }
+            else{
+                document.getElementById("b").style.backgroundImage ="url('sun2.webp')";
+                document.querySelectorAll(".change").innerHTML = "Gondolkodás az élet értelmén";
+                const nodeList = document.querySelectorAll(".change");
+                document.getElementById("day").innerHTML = "Napirend";
+                for (let i = 0; i < nodeList.length; i++) {
+                nodeList[i].innerHTML = "Gondolkodás az élet értelmén"}
+                document.getElementById("ton").innerHTML = "🌑";
+                n =0;
+            }
+        }
+    </script>
+    <div id="primary"> 
+        
+        <div id="one">
+            <div>Hétfő</div>
+           
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+        </div>
+        
+        <div id="two">
+            <div>Kedd</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+        </div>
+       
+        <div id="three">
+            <div>Szerda</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+        </div>
+        
+        <div id="four">
+            <div>Csütörtök</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+        </div>
+        
+        <div id="five">
+            <div>Péntek</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+            <div class="change">Gondolkodás az élet értelmén</div>
+        </div>
+    </div>        
+      
+</body>
+</html>
