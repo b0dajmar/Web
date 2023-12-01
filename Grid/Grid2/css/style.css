@@ -1,0 +1,14 @@
+.grid2{
+    display: grid;
+    grid-template-columns: 20% 20% 20% ;
+    grid-template-rows: 20% 20% 20% 20% ;
+
+}
+
+.grid2 div{
+    background-color: brown;
+    width: 10%;
+    height: 10%;
+    border: 5%;
+    border: burlywood;
+}

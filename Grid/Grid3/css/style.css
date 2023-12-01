@@ -1,0 +1,23 @@
+body{
+    background-color: burlywood;
+}
+
+.grid3_1{
+    display: grid;
+    grid-template-columns: 20% 20% 20% ;
+    grid-template-rows: 20% 20% ;
+}
+.grid3_2{
+    display: grid;
+    grid-template-columns: 20%;
+    grid-template-rows: 20%;
+}
+.grid3_2{
+    grid-column-start: 40%;
+    grid-row-start: 10% ;
+    grid-row-end: 50%;
+}
+
+.grid3_1 div {
+    border: 10px;
+}
