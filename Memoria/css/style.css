@@ -1,0 +1,11 @@
+body{
+    background-color: blueviolet
+}
+.grid1{
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}
+.grid1 div{
+    background-color: brown;
+}
