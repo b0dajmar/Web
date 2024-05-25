@@ -1,0 +1,24 @@
+body{
+    font-size: large;
+    background-color:grey;
+    
+    background-size:cover;
+    
+}
+button {
+    background-color:burlywood;
+  
+    border-style: none;
+}
+header {
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:burlywood;
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+
+div{
+    margin-left: 70%;
+}
