@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fullAndNew">
+        <div id="fullList"></div>
+        <button onclick="hozzaad()">Hozzáadás</button>
+        <button onclick="specific()">Keresés</button>
+    </div>
+    <div id="specificBook">
+
+
+    </div>
+
+
+
+    <script>
+        fetchEndpointByPath("books");
+        
+        
+  
+        async function fetchEndpointByPath(url) {
+          const elem = document.getElementById(url);
+  
+          try {
+            const response = await fetch(`/${url}`);
+            if (!response.ok) {
+              throw new Error();
+            }
+            else{
+            let l ="";
+            const data = await response.text();
+            for(let i =0; i = data.length; i++){
+                l += data[i];
+                l += "/n"
+            }
+            document.getElementById("fullList").innerHTML = l;
+           }
+          } catch {
+            elem.innerText = `hiba`;
+            elem.style.color = "red";
+          }
+        }
+      </script>
+</body>
+</html>

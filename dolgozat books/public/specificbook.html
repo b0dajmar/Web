@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="specificBook">
+            <div id="book"></div>
+            <button onclick="modosit()">Módosítás</button>
+            <button onclick="torol()">Törlés</button>
+
+    </div>
+    <script>
+        fetchEndpointByPath("id");
+        async function fetchEndpointByPath(url) {
+          const elem = document.getElementById(url);
+  
+          try {
+            const response = await fetch(`/${url}`);
+            if (!response.ok) {
+              throw new Error();
+            }
+            else{
+               let book = "" 
+               const data = await response.text();
+               book += ("Id "+data.id)
+               book += (" Title "+data.title)
+               book += (" Author "+data.author)
+               book += (" Description "+data.description)
+               book += (" Year "+data.year)
+               document.getElementById("book").innerHTML = book;
+               
+
+            }
+            }
+            catch {
+            elem.innerText = `hiba`;
+        
+          }}
+
+    </script>
+</body>
+</html>
