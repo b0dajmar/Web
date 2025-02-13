@@ -1,0 +1,26 @@
+
+body{
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+
+.inf{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: aqua;
+    opacity: 10%;
+}
+.detail{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color:coral;
+    opacity: 10%;
+}
+.container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
